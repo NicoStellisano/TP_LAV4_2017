@@ -5,16 +5,16 @@
 
 </div-->
 
-<table class="table table-condensed">
+<table class="container">
     <thead>
       <tr>
-        <th>Juego</th>
-        <th>Jugador</th>
-        <th>Resultado</th>
+        <th><h1>Juego</h1></th>
+        <th><h1>Jugador</h1></th>
+        <th><h1>Resultado</h1></th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let juego of listado">
+      <tr *ngFor="let juego of listado" onchange="actualizar()">
         <td>{{juego.nombre}} </td>
         <td>{{juego.jugador}} </td> 
         <td *ngIf="juego.gano">Gano </td>   

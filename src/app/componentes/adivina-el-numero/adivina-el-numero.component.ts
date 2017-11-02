@@ -14,9 +14,16 @@ export class AdivinaElNumeroComponent implements OnInit {
   Mensajes:string;
   contador:number;
   ocultarVerificar:boolean;
+  usuario:string;
  
   constructor() { 
-    this.nuevoJuego = new JuegoAdivina();
+    let prueba=JSON.parse(localStorage.getItem("usuario"));
+    if(prueba!=null)
+    {
+      this.usuario=prueba.email;
+      
+    }
+    this.nuevoJuego = new JuegoAdivina("Adivina El Numero",false,this.usuario);
     console.info("numero Secreto:",this.nuevoJuego.numeroSecreto);  
     this.ocultarVerificar=false;
   }

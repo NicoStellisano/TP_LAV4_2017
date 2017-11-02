@@ -68,7 +68,14 @@ span.psw {
     }
 }
 
-
+h1 {
+    font-size:3em; 
+    font-weight: 300;
+    line-height:1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color:white;
+  }
 
 #snackbar {
     visibility: hidden;

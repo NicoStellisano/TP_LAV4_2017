@@ -3,7 +3,7 @@ export abstract class Juego {
   public jugador: string;
   public gano = false;
 
-  constructor(nombre?: string, gano?: boolean,jugador?:string) {
+  constructor(jugador?:string, gano?: boolean,nombre?: string,) {
     if (nombre)
       this.nombre = nombre;
 

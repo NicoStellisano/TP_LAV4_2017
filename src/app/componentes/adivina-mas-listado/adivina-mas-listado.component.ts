@@ -11,10 +11,21 @@ export class AdivinaMasListadoComponent implements OnInit {
 
 
   ngOnInit() {
+    let storage=JSON.parse(window.localStorage.getItem("ganadoresAdivina"));
+    if(storage!=null)
+    {
+    for (var i = 0; i < storage.length; i++) {
+      var element = storage[i];
+      this.listadoParaCompartir.push(element);
+      
+    }
   }
-   tomarJuegoTerminado(juego: Juego)
+  }
+   tomarJuegoTerminado(juego: any)
   {
     this.listadoParaCompartir.push(juego);
+    
+    window.localStorage.setItem("ganadoresAdivina",JSON.stringify(this.listadoParaCompartir));
    // console.info("en app",this.listadoParaCompartir);
   }
 }

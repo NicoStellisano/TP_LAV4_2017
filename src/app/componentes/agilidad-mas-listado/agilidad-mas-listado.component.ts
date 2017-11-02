@@ -10,11 +10,23 @@ export class AgilidadMasListadoComponent implements OnInit {
   constructor() { this.listadoParaCompartir = new Array<any>()}
 
   ngOnInit() {
-  }
+    let storage=JSON.parse(window.localStorage.getItem("ganadoresAgilidad"));
+    if(storage!=null)
+    {
 
-  tomarJuegoTerminado(juego: Juego)
+    
+    for (var i = 0; i < storage.length; i++) {
+      var element = storage[i];
+      this.listadoParaCompartir.push(element);
+      
+    }
+  }
+  }
+   tomarJuegoTerminado(juego: any)
   {
     this.listadoParaCompartir.push(juego);
-    console.info("en app",this.listadoParaCompartir);
+    
+    window.localStorage.setItem("ganadoresAgilidad",JSON.stringify(this.listadoParaCompartir));
+   // console.info("en app",this.listadoParaCompartir);
   }
 }

@@ -12,10 +12,20 @@ export class ListadoDeResultadosComponent implements OnInit {
 
 
   constructor() {
+   
+    
+
    }
 
   ngOnInit() {
+    //if(this.listado!=undefined && this.listado!=null)
+    //this.listado=JSON.parse(localStorage.getItem("ganadoresAdivina"));
+    
+  }
 
+  actualizar()
+  {
+    
   }
 
   ver() {

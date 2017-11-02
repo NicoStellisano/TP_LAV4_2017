@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--app-menu></app-menu-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div style="text-align:center">
+  <h1>
+    Encuentra el número distinto!  </h1>
+ </div>
+<h2></h2>
+<div class="container-fluid" style="width:700px;align-items: center">
+    
+<form name="juego" style="margin:auto;display:block;align-items: center">
+        
+   <label style=" display: block;
+   margin-left: auto;
+   margin-right: auto"> Encuentra el:  </label>  
+   <input style="margin:auto;display:block" [(ngModel)]="nuevoJuego.numeroSecreto" name="palabraDesordenada" type="text" class="form-control" disabled style="width:50%"/>
+   <label style="margin:auto;display:block">Clickea sobre él</label>
+   <div style="margin:auto;display:block;background-color:white" >
+      <a  (click)="verificar(numero)"  *ngFor="let numero of numeros" style="color:red;width:2%;height:2%;margin-bottom: 1em;">{{numero}} </a>
+   </div>
+
+</form>
+<div id="snackbar">{{Mensajes}}</div></div>

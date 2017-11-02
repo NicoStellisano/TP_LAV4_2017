@@ -1,3 +1,21 @@
-<p>
-  anagrama works!
-</p>
+<!--The content below is only a placeholder and can be replaced.-->
+<!--app-menu></app-menu-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div style="text-align:center">
+  <h1>
+    Descifra el Anagrama!  </h1>
+ </div>
+<h2></h2>
+<div class="container-fluid" style="width:50%">
+    
+<form name="juego">
+        
+   <label> Descifre esta palabra:  </label>  
+   <input [(ngModel)]="nuevoJuego.palabraDesordenada" name="palabraDesordenada" type="text" class="form-control" disabled style="width:50%"/>
+   <label>¿Respuesta?</label>
+   <input [(ngModel)]="palabraIngresada" (keydown)="mayusculas()" name="palabraIngresada" type="text" class="form-control"  style="width:50%"/>
+   
+    <h2 ><button  (click)="verificar()" class="btn btn-success btn-lg">Verificar</button></h2>
+
+</form>
+<div id="snackbar">{{Mensajes}}</div></div>

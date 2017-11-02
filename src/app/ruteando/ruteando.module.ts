@@ -17,7 +17,15 @@ import { JuegosComponent } from '../componentes/juegos/juegos.component';
 import { RegistroComponent } from '../componentes/registro/registro.component';
 import { MenuCardComponent } from '../componentes/menu-card/menu-card.component';
 import { CabeceraComponent } from '../componentes/cabecera/cabecera.component';
-import { QuienSoyComponent } from '../componentes/quien-soy/quien-soy.component'
+import { QuienSoyComponent } from '../componentes/quien-soy/quien-soy.component';
+import { PPTComponent } from '../componentes/ppt/ppt.component';
+import { PPTListadoComponent } from '../componentes/ppt-listado/ppt-listado.component';
+import { AnagramaComponent } from '../componentes/anagrama/anagrama.component';
+import { AnagramaListadoComponent } from '../componentes/anagrama-listado/anagrama-listado.component';
+import { EncuentraloComponent } from '../componentes/encuentralo/encuentralo.component';
+import { EncuentraloListadoComponent } from '../componentes/encuentralo-listado/encuentralo-listado.component';
+
+
 // declaro donde quiero que se dirija
 const MiRuteo = [
 {path: '' , component: PrincipalComponent},
@@ -26,14 +34,16 @@ const MiRuteo = [
 {path: 'Registro' , component: RegistroComponent},
 {path: 'Principal' , component: PrincipalComponent},
 {path: 'Listado' , component: ListadoComponent},
+
 { path: 'Juegos' ,
 component: JuegosComponent ,
 children:
      [{path: '' , component: MenuCardComponent},
-     {path: 'Adivina' , component: AdivinaElNumeroComponent},
       {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
-      {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
-      {path: 'Agilidad' , component: AgilidadAritmeticaComponent}]
+      {path: 'PPTListado' , component: PPTListadoComponent},     
+      {path: 'EncuentraloListado' , component: EncuentraloListadoComponent},            
+      {path: 'AnagramaListado' , component: AnagramaListadoComponent},      
+      {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent}]
 },
 {path: '**' , component: ErrorComponent},
 {path: 'error' , component: ErrorComponent}];

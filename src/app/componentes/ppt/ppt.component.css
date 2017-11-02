@@ -1,0 +1,112 @@
+.card {
+    box-shadow: 0 2px 4px 0 rgba(192, 192, 192, 0.055);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    max-width: 300px;
+   height: 100%;
+    margin: 10px;
+    padding-bottom: 10px;
+    float: left;
+  background-color: rgb(161, 233, 136);
+    text-align: center;
+}
+h1 {
+    font-size:3em; 
+    font-weight: 300;
+    line-height:1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color:white;
+  }
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+    border-radius: 5px 5px 0 0;
+    width: 200px;
+    height: 200px;
+}/* Add some padding inside the card container */
+.container {
+}
+
+
+.button{
+    margin-left: 1px;
+    display: inline-block;
+    width: 90%;
+    padding: 5px 15px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: rgba(52, 255, 255, 0.795);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+    border: none;
+    outline: 0;
+ 
+    padding: 8px;
+    color: white;
+   /* background-color: #000;*/
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {background-color: #078da5}
+  
+  .button:active {
+    background-color: #078da5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+   
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#snackbar.Ganador {
+    background-color: #059F2F;
+}
+#snackbar.Perdedor {
+    background-color: #FF0000;
+}
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+button:disabled {
+    background-color: rgb(66, 66, 66);
+ }

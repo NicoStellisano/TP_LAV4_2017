@@ -32,9 +32,18 @@ export class LoginComponent implements OnInit {
   }
 
   Entrar() {
-    if (this.usuario === 'admin' && this.clave === 'admin') {
+    let user= JSON.parse(localStorage.getItem("usuario"));
+    console.log(user);
+    if (this.usuario === user.email && this.clave === user.pass) {
+      console.log("entro");
+      
       this.router.navigate(['/Principal']);
     }
+  }
+  volver()
+  {
+    this.router.navigate(['/Principal']);
+    
   }
   MoverBarraDeProgreso() {
     

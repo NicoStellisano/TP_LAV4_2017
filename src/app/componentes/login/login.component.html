@@ -29,7 +29,7 @@
       </div>
 
       <div class="container">
-        <label><b>Usuario</b></label>
+        <label><b>Email</b></label>
         <input type="text" placeholder="Usuario"  [(ngModel)]="usuario"  name="uname" required>
 
         <label><b>Clave</b></label>
@@ -47,9 +47,8 @@
       </div>
 
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancelar</button>
+        <button type="button" (click)="volver()" class="cancelbtn">Volver</button>
         <button type="button" class="aceptbtn" routerLink="/Registro" >Registrarse</button>
-        <span class="psw">Te olvidaste <a href="#">la clave?</a></span>
       </div>
      
     </form>

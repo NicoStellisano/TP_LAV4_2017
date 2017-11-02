@@ -40,7 +40,15 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { MenuCardComponent } from './componentes/menu-card/menu-card.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
-import { AnagramaComponent } from './componentes/anagrama/anagrama.component'
+import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
+import { PPTComponent } from './componentes/ppt/ppt.component';
+import { PPTListadoComponent } from './componentes/ppt-listado/ppt-listado.component';
+
+import { AnagramaListadoComponent } from './componentes/anagrama-listado/anagrama-listado.component';
+import { ReaccionVelozComponent } from './reaccion-veloz/reaccion-veloz.component';
+import { ReaccionVelozListadoComponent } from './componentes/reaccion-veloz-listado/reaccion-veloz-listado.component';
+import { EncuentraloComponent } from './componentes/encuentralo/encuentralo.component';
+import { EncuentraloListadoComponent } from './componentes/encuentralo-listado/encuentralo-listado.component'
 
 @NgModule({
   declarations: [
@@ -61,7 +69,14 @@ import { AnagramaComponent } from './componentes/anagrama/anagrama.component'
     MenuCardComponent,
     CabeceraComponent,
     QuienSoyComponent,
-    AnagramaComponent
+    AnagramaComponent,
+    PPTComponent,
+    PPTListadoComponent,
+    AnagramaListadoComponent,
+    ReaccionVelozComponent,
+    ReaccionVelozListadoComponent,
+    EncuentraloComponent,
+    EncuentraloListadoComponent
   ],
   imports: [
     BrowserModule,
