@@ -45,8 +45,6 @@ import { PPTComponent } from './componentes/ppt/ppt.component';
 import { PPTListadoComponent } from './componentes/ppt-listado/ppt-listado.component';
 
 import { AnagramaListadoComponent } from './componentes/anagrama-listado/anagrama-listado.component';
-import { ReaccionVelozComponent } from './reaccion-veloz/reaccion-veloz.component';
-import { ReaccionVelozListadoComponent } from './componentes/reaccion-veloz-listado/reaccion-veloz-listado.component';
 import { EncuentraloComponent } from './componentes/encuentralo/encuentralo.component';
 import { EncuentraloListadoComponent } from './componentes/encuentralo-listado/encuentralo-listado.component'
 
@@ -73,8 +71,6 @@ import { EncuentraloListadoComponent } from './componentes/encuentralo-listado/e
     PPTComponent,
     PPTListadoComponent,
     AnagramaListadoComponent,
-    ReaccionVelozComponent,
-    ReaccionVelozListadoComponent,
     EncuentraloComponent,
     EncuentraloListadoComponent
   ],
